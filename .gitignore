@@ -1,0 +1,6 @@
+# presentation
+presentation.*
+!presentation.tex
+!presentation.pdf
+image/*.pdf
+missfont.log

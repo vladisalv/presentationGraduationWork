@@ -1,0 +1,6 @@
+:e      ++enc=cp1251 presentation.tex
+:tabnew ++enc=cp1251 title.tex
+:tabnew ++enc=cp1251 sequence.tex
+:tabnew ++enc=cp1251 parallel.tex
+:tabnew ++enc=cp1251 result.tex
+gt
