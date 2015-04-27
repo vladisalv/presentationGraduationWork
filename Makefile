@@ -25,6 +25,8 @@ view:
 
 clean:
 	@find $(FILE).* | grep -v tex | xargs rm -f
+	@rm -f missfont.log
+
 
 vim:
 	@vim -s .vimopen
