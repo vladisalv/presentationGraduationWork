@@ -1,6 +1,10 @@
 :e      ++enc=cp1251 presentation.tex
 :tabnew ++enc=cp1251 title.tex
+:tabnew ++enc=cp1251 intro.tex
+:tabnew ++enc=cp1251 math.tex
 :tabnew ++enc=cp1251 sequence.tex
 :tabnew ++enc=cp1251 parallel.tex
+:tabnew ++enc=cp1251 program.tex
+:tabnew ++enc=cp1251 experiment.tex
 :tabnew ++enc=cp1251 result.tex
 gt
