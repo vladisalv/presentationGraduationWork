@@ -9,6 +9,8 @@
 %\usepackage{tikz}
 \usepackage{pstricks}
 \usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subfigure} % Для отдельных рисунков
 
 \defbeamertemplate*{title page}{customized}[1][]
 {
@@ -46,24 +48,6 @@
 \begin{document}
 
 \input{title}
-
-% Автоматическая генерация содержания
-%\frame{\frame{Содержание}\tableofcontents}
-
-%\newcommand\mybox[2]{\textit{#1}~#2}
-%\newcommand\mybox[1]{\put(10,10){\line(1,0){#1-#2}}}
-
-%\begin{frame}
-%\begin{picture}(60, 100)(0,0)
-%    %\mybox{0,0, 10, 10}
-%%    \put(0,0){\line( 1, 0){100}}
-%%    \put(100,0){\line( 0, 1){20}}
-%%    \put(100,20){\line(-1, 0){100}}
-%%    \put(0,20){\line( 0,-1){20}}
-%    \mybox{10}{5}
-%\end{picture}
-%\end{frame}
-
 \input{intro}
 \input{math}
 \input{sequence}

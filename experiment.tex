@@ -6,32 +6,68 @@
 
 
 \begin{frame}{Результаты тестирования программной реализации}
-В качесте тестовых данных использовалась искуственно сгенерированная биологическая последовательность длинной~5~млн.~символов.
-В нее намеренно было внесено 2 повтора длиной по 1000 и 5000 символов соответственно.
-    \begin{center}
-        \includegraphics[scale=0.45]{gpu.png}
-    \end{center}
+\begin{figure}[h]
+\center{\includegraphics[width=0.6\linewidth]{gpuA.png}}
+\caption*{Сравнение HOST-программы и GPU-программы}\label{img:gpuA}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Результаты тестирования программной реализации}
+\begin{figure}[h!]
+    \begin{minipage}[h]{0.49\linewidth}
+    \center{\includegraphics[width=1\linewidth]{images/masAa.png}}
+    \caption*{Сильная масштабируемость GPU- и HOST-программы}\label{img:masAa}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.49\linewidth}
+    \center{\includegraphics[width=1\linewidth]{images/masAb.png}}
+    \caption*{Ускорение GPU- и HOST-программы}\label{img:masAa}
+    \end{minipage}
+\end{figure}
 
 \end{frame}
 
 \begin{frame}{Результаты тестирования программной реализации}
-    \begin{center}
-        \includegraphics[scale=0.35]{lom.png}
-    \end{center}
-На системе Ломоносов проведен анализ масштабируемости GPU версии программы.
-Программа запускалась в конфигурации два процесса на один узел, чтобы каждый
-mpi-процесс безраздельно владел GPU устройством.
+\begin{figure}[h!]
+    \begin{minipage}[h]{0.49\linewidth}
+    \center{\includegraphics[width=1\linewidth]{images/masBa.png}}
+    \caption*{Сильная масштабируемость HOST-программы}\label{img:masBa}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.49\linewidth}
+    \center{\includegraphics[width=1\linewidth]{images/masBb.png}}
+    \caption*{Ускорение HOST-программы}\label{img:masBb}
+    \end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Результаты тестирования программной реализации}
+\begin{figure}[h]
+    \center{\includegraphics[width=1\linewidth]{images/tras.png}}
+    \caption*{Трасса программы}\label{img:tras}
+\end{figure}
 \end{frame}
 
 
-
 \begin{frame}{Полученные результаты}
-    \begin{center}
-        \includegraphics[scale=0.25]{cool.jpg}
-    \end{center}
-Данная гомологическая матрица получена из искусственно сгенерированной биологической последовательности длиной~50~тыс.~символов.
-В данную последовательность были внесены повторяющиеся повторы длиной 1000 и 100 символов, 20 и 5 раз соответственно.
-После этого в последовательность было внесено 15\% мутаций (вставка, удаление, обмен)
+\begin{figure}[h]
+\subfigure[]{
+    \includegraphics[width=0.4\linewidth]{images/ratmus.png}
+    \label{fig:exp2a}
+}
+\hspace{4ex}
+\subfigure[]{
+    \includegraphics[width=0.4\linewidth]{images/myratmus.png}
+    \label{fig:exp2b}
+}
+\caption*{Гомологическая матрица сравнения Mus musculus и Rattus norvegicus.
+    Длина последовательностей 172.5 Мб и 143.6 Мб соответственно.
+    Параметры алгоритма: $W1: 300000, d1: 64, W2:800000, d2: 160000, coef: 5, \varepsilon 4*10^{-5}$;
+    \subref{fig:exp2a} последовательная программа;
+    \subref{fig:exp2b} параллельная программа;
+} \label{fig:rusmat}
+\end{figure}
 \end{frame}
 
 
